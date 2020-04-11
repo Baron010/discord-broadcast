@@ -403,4 +403,4 @@ const cooldown = new Set()
       break;  //!Baron#0001
     }
   })
-client.login('NTk1NTgxMzQyNzg4MzU0MDU4.XpJL1Q.S7sinZ_XeX8s-dIYc4mOh7LnKnM');
+client.login('BOT_TOKEN');
