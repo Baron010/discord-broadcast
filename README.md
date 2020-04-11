@@ -7,10 +7,13 @@ It's a simple broadcast code with Replacements.
 # alert: 
 - it's against Discord TOS (I am not responsible for any wrong usage of this code)
 
-# Requirements
+# Requirements:
 
 ```css
 * discord.js@11.5.1 (or any version under version 12)
 * cooldown
 ```
 
+# Usage:
+
+- <prefix>bc help
