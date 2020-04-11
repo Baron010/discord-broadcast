@@ -11,5 +11,6 @@ It's a simple broadcast code with Replacements.
 
 ```css
 * discord.js@11.5.1 (or any version under version 12)
+* cooldown
 ```
 
