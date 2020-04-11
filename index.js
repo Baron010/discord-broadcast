@@ -1,7 +1,11 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const cooldown = new Set()
+const prefix = "#"
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
 
+const cooldown = new Set()
   client.on("message", async message => {
     let msgCount = 0;
 
@@ -380,12 +384,12 @@ const cooldown = new Set()
        .setAuthor(message.author.username, message.author.avatarURL)
        .setTitle(`**IdiotBot Broadcast Help**`)
        .setDescription(`${space}**In fact idiot bot is designed to meet almost all the desires the server owner needs, So we tried to make it as much as possible**\n`+
-       '**`Commands`**\n'+`${space} `+'**pls bc all <message>**'+` ${arrow} For all members\n`+
-       `${space} `+'**pls bc online <message>**'+` ${arrow} For specific members with ${online} status\n`+
-       `${space} `+'**pls bc offline <message>**'+` ${arrow} For specific members with ${offline} status\n`+
-       `${space} `+'**pls bc idle <message>**'+` ${arrow} For specific members with ${idle} status\n`+
-       `${space} `+'**pls bc dnd <message>**'+` ${arrow} For specific members with ${dnd} status\n`+
-       `${space} `+'**pls bc role-name/role-id <message>**'+` ${arrow} For members with specific role\n`)
+       '**`Commands`**\n'+`${space} `+`**${prefix}bc all <message>**`+` ${arrow} For all members\n`+
+       `${space} `+`**${prefix}bc online <message>**`+` ${arrow} For specific members with ${online} status\n`+
+       `${space} `+`**${prefix}bc offline <message>**`+` ${arrow} For specific members with ${offline} status\n`+
+       `${space} `+`**${prefix}bc idle <message>**`+` ${arrow} For specific members with ${idle} status\n`+
+       `${space} `+`**${prefix}bc dnd <message>**`+` ${arrow} For specific members with ${dnd} status\n`+
+       `${space} `+`**${prefix}bc role-name/role-id <message>**`+` ${arrow} For members with specific role\n`)
        .addField(`**Replacements**`, `**[sender]\n
        [server]\n
        [channel]\n
@@ -399,5 +403,4 @@ const cooldown = new Set()
       break;  //!Baron#0001
     }
   })
-  
-  client.login(BOT_TOKEN)
+client.login('NTk1NTgxMzQyNzg4MzU0MDU4.XpJL1Q.S7sinZ_XeX8s-dIYc4mOh7LnKnM');
